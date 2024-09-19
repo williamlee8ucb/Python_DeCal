@@ -1,1 +1,1 @@
-Place to store Python DeCal Homework and Demos
+Place to store Python DeCal Homework, Demos, and Discussions
