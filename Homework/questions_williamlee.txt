@@ -1,11 +1,22 @@
 1. What are 3-5 (or more) commands that you can use on terminal and what do they do? What language is your computer terminal in?
 
+	a. pwd: tells you what directory you are in
+	b. mkdir: allows you to create a new directory
+	c. rm <file>: allows you to delete a file
+
 2. Do you have pets? What kind?
+
+	I no longer have pets, but I used to have a dog (also named Charlie) and two birds.
 
 3. If you run across an error, what would your first course of action be?
 
+	I would type the error message into the browser and see if StackOverFlow or another website has a fix.
+
 4. Funniest thing that happened to you in high school.
+
+	I honestly cannot remember the funniest thing that happened to me in high school. Maybe when I faked a deep romantic attraction to craters. 
 
 5. What is a python script? (Keep it simple)
 
+	A python script is a file that has python code in it that you can run in the terminal.
 
