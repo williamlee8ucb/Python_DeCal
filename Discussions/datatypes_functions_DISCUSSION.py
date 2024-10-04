@@ -12,36 +12,36 @@ Original file is located at
 Instructions: Fill in the blanks. (Ex. a = 5, so the data type of a is an int). If you're not sure, you can use the type() function to output the type of the variable.
 """
 
-variable1 = "Surprised Pikachu is the best meme." # Data type of variable1: _______________
+variable1 = "Surprised Pikachu is the best meme." # Data type of variable1: string
 
-variable2 = 5 # Data type of variable2: _______________
+variable2 = 5 # Data type of variable2: int
 
-variable3 = 1.29 # Data type of variable3: _______________
+variable3 = 1.29 # Data type of variable3: float
 
 def g():
     print("beep beep")
     return True
 
-variable4 = g # Data type of variable4: _______________
+variable4 = g # Data type of variable4: None (no arguments, so cannot be function, maybe)
 
-variable5 = g() # Data type of variable5: _______________
+variable5 = g() # Data type of variable5: function, outputs boolean
 
-variable6 = [1,2,3]
+variable6 = [1,2,3] # Data type of variable6: list
 
-variable7 = (1,3,5)
+variable7 = (1,3,5) # Data type of variable7: tuple
 
-variable8 = {"brand": "Ford", "model": "Mustang", "year": 1964}
+variable8 = {"brand": "Ford", "model": "Mustang", "year": 1964} # Data type of variable8: dictionary
 
 """### Problem 2: Using /, //, % (5 points)
 
 Observe what happens in each of these scenarios. Recall the differences between normal, floor, and modulo division and describe those differences in the markdown cell below.
 """
 
-5/2 # normal division
+5/2 # normal division: returns float
 
-4//3 # floor division
+4//3 # floor division: returns truncated integer
 
-459 % 4 # modulo division
+459 % 4 # modulo division: returns remainder
 
 """Describe the operators above"""
 
@@ -53,11 +53,11 @@ In the following problem use string indexing to turn the words below into a new 
 """
 
 word_1 = "Fastest"
-##CODE HERE##
+print(word_1[0:4])
 word_2 = "Outside" #two options are acceptable here, try both if you want!
-##CODE HERE##
+print(word_2[3:])
 word_3 = "racecar"
-##CODE HERE##
+print(word_3[0:4])
 
 """### Problem 4: Palindromes (2 points)
 
@@ -65,10 +65,9 @@ Use string indexing to reverse the palindrome, then use the `print()` function t
 """
 
 palindrome_1 = "tattarrattat"
-##CODE HERE##
+print(palindrome_1[::-1])
 palindrome_2 = "madam"
-##CODE HERE##
-
+print(palindrome_2[::-1])
 """## Application Problems
 
 ### Problem 1 (5 points)
@@ -115,7 +114,14 @@ def two_of_three(a, b, c):
     >>> two_of_three(5, 5, 5)
     50
     """
-    return ## INSERT CODE ##
+    
+    max_num = max(a,b,c)
+    second_num = a + b + c - max_num - min(a,b,c)
+    return max_num**2 + second_num**2
+
+# Other solution:
+# sum_of_squares = a**2 + b**2 + c**2
+# return sum_of_squares - (min(a,b,c))**2
 
 """## Coding Hygiene
 
