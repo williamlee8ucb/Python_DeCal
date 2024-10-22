@@ -18,7 +18,24 @@ for i in list:
             repeat.append(i)
         new_dict[i] = repeat
 
-print(new_dict)
+
 
 
 # Problem 2: Prime Condition...
+
+def isPrime(int):
+    factors = []
+    i = 1
+    while i <= int:
+        if int%i == 0:
+            factors.append(i)
+        i += 1
+    
+    if int == 1:
+        return (int, True)
+    if factors == [1, int]:
+        return (int, True)
+    else:
+        return (int, False)
+
+print(isPrime(13))

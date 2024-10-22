@@ -32,8 +32,8 @@ def fuel_efficiency(distance, fuel):
 
 # 5) Secret Code
 def decodeNumbers(n):
-   n_last_removed = n//10
-   last_digit = n%10
+   n_last_removed = n//10 
+   last_digit = n%10 
    
    power = 0
    divide = n
